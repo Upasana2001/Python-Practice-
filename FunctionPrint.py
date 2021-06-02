@@ -7,11 +7,11 @@ Print the string 12345 .
 Input Format:The first line contains an integer .
   
   
-First Method(WHILE LOOP)                #input = 5, output = 12345
+First Method(WHILE LOOP)                #input = 5, output = 12345     
 if __name__ == '__main__':
-    n = int(input())
+    n = int(input())                                                 
     i=1
-    while i<=n:
+    while i<=n:                                                       
         print(i,end='')
         i=i+1
         
@@ -22,4 +22,11 @@ if __name__ == '__main__':
     for i in range(1,n+1):
         print(i,end='')
         
+        
+# But if i use this code output will be different
+n = int(input('Enter N : '))
+i=1
+while i<=n:                       #input = 3,   output = 1
+    print(i)                       #                     2 
+    i=i+1                         #                      3
         
